@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package com.github.paf91.compressiontest;
+
+message Author {
+    string name = 1;
+    string surname = 2;
+    string nationality = 3;
+}
+
+message Book {
+    string title = 1;
+    int64 pages = 2;
+    bool available = 3;
+    Author author = 4;
+}
+
+message Library {
+    string address = 1;
+    repeated Book books = 2;
+}
+
+message Libraries {
+    repeated Library library_list = 1;
+}
