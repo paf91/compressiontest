@@ -28,7 +28,7 @@ public class ProtobufLibraryCompressionTestLineByLine {
     }
 
     private static void runTest(List<Library> libraries, String compression, String label) throws Exception {
-        File file = new File(label + ".pb");
+        File file = new File(label + ".bin");
         FileOutputStream fos = new FileOutputStream(file);
         OutputStream out;
 
