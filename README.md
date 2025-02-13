@@ -55,3 +55,13 @@ mvn exec:java -D"exec.mainClass=com.github.paf91.compressiontest.ProtobufLibrary
 mvn exec:java -Dexec.mainClass="com.github.paf91.compressiontest.AvroLibraryCompressionTest"
 mvn exec:java -Dexec.mainClass="com.github.paf91.compressiontest.JsonLibraryCompressionTest"
 mvn exec:java -Dexec.mainClass="com.github.paf91.compressiontest.ProtobufLibraryCompressionTest"
+
+#Line by line comparison:
+#win
+mvn exec:java -D"exec.mainClass=com.github.paf91.compressiontest.JsonLibraryCompressionTestLineByLine"
+mvn exec:java -D"exec.mainClass=com.github.paf91.compressiontest.AvroLibraryCompressionTestLineByLine"
+mvn exec:java -D"exec.mainClass=com.github.paf91.compressiontest.ProtobufLibraryCompressionTestLineByLine"
+#linux
+mvn exec:java -Dexec.mainClass="com.github.paf91.compressiontest.AvroLibraryCompressionTestLineByLine"
+mvn exec:java -Dexec.mainClass="com.github.paf91.compressiontest.JsonLibraryCompressionTestLineByLine"
+mvn exec:java -Dexec.mainClass="com.github.paf91.compressiontest.ProtobufLibraryCompressionTestLineByLine"
