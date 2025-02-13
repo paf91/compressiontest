@@ -71,3 +71,4 @@ replay_pid*
 *.gz
 *.protobuf
 *.sz
+*.pb
